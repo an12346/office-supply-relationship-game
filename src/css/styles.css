@@ -1,0 +1,48 @@
+#question1 {
+  display: none;
+}
+
+#question2  {
+  display: none;
+}
+
+#question3  {
+  display: none;
+}
+
+#question4  {
+  display: none;
+}
+
+#question5  {
+  display: none;
+}
+
+
+body  { 
+    background-image: url("../img/red-curtains-crop.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+    color: yellow;
+    font-size: 3em;
+  }
+
+  .btn {
+    padding: 1em;
+    margin: .5em;
+    width: 30%;
+  }
+
+  .container {
+    background-color: rgb(75, 75, 75, .5);
+    border-radius: 15px;
+    margin-top: 5%;
+    padding: 3%;
+  }
+  
+  #weird {
+    width: 300px;
+    height: auto;
+  }
