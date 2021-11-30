@@ -11,9 +11,11 @@
 
     <div id="enterName">
       <h2>Office Dating Quiz</h2>
-      <h3>Hello my name is Michael Scott. Welcome to the game of Office Love. Answer these dating questions to find your
-        office match. Enter your name to begin.</h3>
+      <div class="bubble bubble-bottom-left" contenteditable>
+        <h3>Hello my name is Michael Scott. Welcome to the game of Office Love. Answer these dating questions to find your office match.</h3>
+      </div>
       <img id="weird" src="./img/michael-face.png" alt="A photo of steve caroll making a funny face">
+      <h3>Enter your name to begin.</h3>
       <input type="text" id="userName">
       <button id="play" class="btn btn-light">Enter Your Name To Find Love.</button>
     </div>
@@ -61,11 +63,42 @@
         <button type="button" class="5buttonSticky  btn btn-light">As long as everything is organized and color coated,
           I don't care where the wedding takes place.</button>
       </div>
+
+      <div id="question6">
+        <h3>What is your favorite color?</h3>
+        <button type="button" class="6buttonStapler  btn btn-light">Red</button>
+        <button type="button" class="6buttonTrash  btn btn-light">"Brown, it's all the colors mixed together!"</button>
+        <button type="button" class="6buttonSticky  btn btn-light">Yellow</button>
+      </div>
+
+      <div id="question7">
+        <h3>What does your perfect day look like?</h3>
+        <button type="button" class="7buttonStapler  btn btn-light"> A day at the beach</button>
+        <button type="button" class="7buttonTrash  btn btn-light">Trash Day</button>
+        <button type="button" class="7buttonSticky  btn btn-light">A day of remembering important dates</button>
+      </div>
+
+      <div id="question8">
+        <h3>If you could only practice one hobby for the rest of your life, what would it be?</h3>
+        <button type="button" class="8buttonStapler  btn btn-light">Attaching objects to one another.</button>
+        <button type="button" class="8buttonTrash  btn btn-light">Trading garbage pail kids cards.</button>
+        <button type="button" class="8buttonSticky  btn btn-light">Organizing everyones life for them.</button>
+      </div>
+
     </div>
     <div class="result">
-      <img id="trash" src="./img/trash-can-person.png" alt="A photo of a person entering a trash can">
-      <img id="sticky" src="./img/sticky-note-man.png" alt="A man covered in sticky notes">
-      <img id="stapler" src="./img/stapler.jpeg" alt="A photo of a stapler">
+      <div id="trashImg">
+        <h4> <span text="#userName"></span> blah blah your match is </h4>
+        <img id="trash" src="./img/trash-can-person.png" alt="A photo of a person entering a trash can">
+      </div>
+      <div id="stickyImg">
+        <h4>blah blah blah your match is </h4>
+        <img id="sticky" src="./img/sticky-note-man.png" alt="A man covered in sticky notes">
+      </div>
+      <div id="staplerImg">
+        <h4>blah blah blah your match is </h4>
+        <img id="stapler" src="./img/stapler.jpeg" alt="A photo of a stapler">
+      </div>
     </div>
   </div>
 </body>
