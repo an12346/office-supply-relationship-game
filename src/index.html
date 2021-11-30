@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    
-  <title>Office love</title>
-  </head>
-  <body>
-    <div class="container">
 
-      <div id="enterName">
-        <h2>Office Dating Quiz</h2>
-        <h3>Hello my name is Michael Scott. Welcome to the game of Office Love. Answer these dating questions to find your office match. Enter your name to begin.</h3>
-        <img id="weird" src="./img/michael-face.png" alt="A photo of steve caroll making a funny face">
-        <input type="text" id="userName">
-        <button id="play" class="btn btn-light">Enter Your Name To Find Love.</button>
+<head>
+
+  <title>Office love</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div id="enterName">
+      <h2>Office Dating Quiz</h2>
+      <h3>Hello my name is Michael Scott. Welcome to the game of Office Love. Answer these dating questions to find your
+        office match. Enter your name to begin.</h3>
+      <img id="weird" src="./img/michael-face.png" alt="A photo of steve caroll making a funny face">
+      <input type="text" id="userName">
+      <button id="play" class="btn btn-light">Enter Your Name To Find Love.</button>
+    </div>
+
+    <div id="questions">
+      <div id="question1">
+        <h3>If you could have dinner with anyone, who would it be?</h3>
+        <button type="button" class="1buttonStapler btn btn-light">Chris Stapleton</button>
+        <button type="button" class="1buttonTrash btn btn-light">Oscar the Grouch</button>
+        <button type="button" class="1buttonSticky btn btn-light">Sticky Minaj</button>
       </div>
 
+      <div id="question2">
+        <h3>You're sitting in a coffeeshop. The table next to you spills their coffee. What do you do?</h3>
+        <button type="button" class="2buttonStapler btn btn-light">Help throw away dirty supplies</button>
+        <button type="button" class="2buttonTrash btn btn-light">Put together a stack of napkins and wipe up the
+          mess</button>
+        <button type="button" class="2buttonSticky btn btn-light">Write a memo about the dangers of hot coffee</button>
+      </div>
 
-      <div id="questions">
-        <div id="question1">
-          <h3>If you could have dinner with anyone, who would it be?</h3>
-              <button type="button" class="buttonStapler btn btn-light">Chris Stapleton</button>
-              <button type="button" class="buttonTrash btn btn-light">Oscar the Grouch</button>
-              <button type="button" class="buttonSticky btn btn-light">Sticky Minaj</button>
-        </div>
+      <div id="question3">
+        <h3>If you were were stuck on a deserted island and could only choose one thing to take with you, what would it
+          be?</h3>
+        <button type="button" class="3buttonStapler btn btn-light">A trash bag, you can use it to carry things, wear it
+          as clothes, use it as a sail, or make a shelter out of it!</button>
+        <button type="button" class="3buttonTrash btn btn-light">Staples, to fasten myself a shelter?</button>
+        <button type="button" class="3buttonSticky btn btn-light">A pen, to write down all my thoughts and help keep my
+          mind organized.</button>
+      </div>
 
-        <div id="question2">
-          <h3>You're sitting in a coffeeshop. The table next to you spills their coffee. What do you do?</h3>
-            <button type="button" class="buttonStapler btn btn-light">Help throw away dirty supplies</button>
-            <button type="button" class="buttonTrash btn btn-light">Put together a stack of napkins and wipe up the mess</button>
-            <button type="button" class="buttonSticky btn btn-light">Write a memo about the dangers of hot coffee</button>
-        </div>
-        
-        <div id="question3">
-          <h3>If you were were stuck on a deserted island and could only choose one thing to take with you, what would it be?</h3>
-            <button type="button" class="buttonStapler btn btn-light">A trash bag, you can use it to carry things, wear it as clothes, use it as a sail, or make a shelter out of it!</button>
-            <button type="button" class="buttonTrash btn btn-light">Staples, to fasten myself a shelter?</button>
-            <button type="button" class="buttonSticky btn btn-light">A pen, to write down all my thoughts and help keep my mind organized.</button>
-        </div>
+      <div id="question4">
+        <h3>If you were to take me out on a date, where would we go?</h3>
+        <button type="button" class="4buttonStapler  btn btn-light">The location doesn't matter, as long as I get to
+          hold you</button>
+        <button type="button" class="4buttonTrash  btn btn-light">Home Country Buffet</button>
+        <button type="button" class="4buttonSticky  btn btn-light">We'd go on a tour of a Glue factory or a paper
+          mill</button>
+      </div>
 
-        <div id="question4">
-          <h3>If you were to take me out on a date, where would we go?</h3>
-            <button type="button" class="buttonStapler  btn btn-light">The location doesn't matter, as long as I get to hold you</button>
-            <button type="button" class="buttonTrash  btn btn-light">Home Country Buffet</button>
-            <button type="button" class="buttonSticky  btn btn-light">We'd go on a tour of a Glue factory or a paper mill</button>
-        </div>
-
-        <div id="question5">
-          <h3>Where would you dream wedding take place?</h3>
-            <button type="button" class="buttonStapler  btn btn-light">Staples Center</button>
-            <button type="button" class="buttonTrash  btn btn-light">Somewhere with the arouma of garbage, like a landfill.</button>
-            <button type="button" class="buttonSticky  btn btn-light">As long as everything is organized and color coated, I don't care where the wedding takes place.</button>
-        </div>
-      </div>  
-
+      <div id="question5">
+        <h3>Where would your dream wedding take place?</h3>
+        <button type="button" class="5buttonStapler  btn btn-light">Staples Center</button>
+        <button type="button" class="5buttonTrash  btn btn-light">Somewhere with the arouma of garbage, like a
+          landfill.</button>
+        <button type="button" class="5buttonSticky  btn btn-light">As long as everything is organized and color coated,
+          I don't care where the wedding takes place.</button>
+      </div>
     </div>
-    <!-- <img src="./img/garbage.jpeg" alt="A photo of a trash can.">
-    <img src="./img/michael-bandana.png" alt="A photo of steve carrol in a bandana"> -->
-      </body>
+    <div class="result">
+      <img id="trash" src="./img/trash-can-person.png" alt="A photo of a person entering a trash can">
+      <img id="sticky" src="./img/sticky-note-man.png" alt="A man covered in sticky notes">
+      <img id="stapler" src="./img/stapler.jpeg" alt="A photo of a stapler">
+    </div>
+  </div>
+</body>
+
 </html>
 
 

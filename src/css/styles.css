@@ -18,7 +18,17 @@
   display: none;
 }
 
+#trash {
+  display: none;
+}
 
+#sticky {
+  display: none;
+}
+
+#stapler {
+  display: none;
+}
 body  { 
     background-image: url("../img/red-curtains-crop.jpeg");
     background-attachment: fixed;
