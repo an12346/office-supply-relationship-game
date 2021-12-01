@@ -11,7 +11,11 @@ $(document).ready(function () {
     let sticky = 0;
     let trash = 0;
     let userName = $('#userName').val();
+    
  
+    $('#enterName').hide();
+    $('#question1').show();
+
     function calculateWinner() {
       if (trash === staple || trash === sticky) {
         trash += 1;
@@ -20,11 +24,14 @@ $(document).ready(function () {
       }
       
       if (trash > sticky && trash > staple) {
-        $('#trashImg').show();
+        $('#trashImg').fadeIn();
+        $('#answer').fadeIn();
       } else if (sticky > trash && sticky > staple) {
-        $('#stickyImg').show();
+        $('#stickyImg').fadeIn();
+        $('#answer').fadeIn();
       } else if (staple > trash && staple > sticky) {
-        $('#staplerImg').show();
+        $('#staplerImg').fadeIn();
+        $('#answer').fadeIn();
       }
     }
 
@@ -67,15 +74,9 @@ $(document).ready(function () {
     function eighthQ() {
       $('#question8').hide();
       calculateWinner();
+      $("#reset-button").show();
     }
 
-    //START PLAY PHASE
-    $('#play').click(function () {
-      $('#enterName').hide();
-      $('#question1').show();
-    });
-
-    //FIRST QUESTION PHASE
     $('.1buttonStapler').click(function () {
       staple += 1;
       firstq();
@@ -89,7 +90,7 @@ $(document).ready(function () {
       firstq();
     });
 
-    //SECOND QUESTION PHASE
+    
     $('.2buttonStapler').click(function () {
       staple += 1;
       secq();
@@ -103,7 +104,7 @@ $(document).ready(function () {
       secq();
     });
 
-    //THIRD QUESTION PHASE
+    
     $('.3buttonStapler').click(function () {
       staple += 1;
       thirdq();
@@ -118,7 +119,7 @@ $(document).ready(function () {
     });
 
 
-    //FOURTH QUESTION PHASE
+    
     $('.4buttonStapler').click(function () {
       staple += 1;
       fourthq();
@@ -132,7 +133,7 @@ $(document).ready(function () {
       fourthq();
     });
 
-    //FIFTH QUESTION PHASE
+    
     $('.5buttonStapler').click(function () {
       staple += 1;
       fifthQ();
@@ -146,7 +147,7 @@ $(document).ready(function () {
       fifthQ();
     });
 
-    //SIXTH QUESTION PHASE
+    
     $('.6buttonStapler').click(function () {
       staple += 1;
       sixthQ();
@@ -160,7 +161,7 @@ $(document).ready(function () {
       sixthQ();
     });
 
-    //SEVENTH QUESTION PHASE
+    
     $('.7buttonStapler').click(function () {
       staple += 1;
       seventhQ();
@@ -174,28 +175,24 @@ $(document).ready(function () {
       seventhQ();
     });
 
-    //EIGHT QUESTION PHASE
+    
     $('.8buttonStapler').click(function () {
       staple += 1;
-      console.log("St: " + staple);
-      console.log("T: " + trash);
-      console.log("St: " + sticky);
       eighthQ();
     });
     $('.8buttonTrash').click(function () {
       trash += 1;
-      console.log("St: " + staple);
-      console.log("T: " + trash);
-      console.log("St: " + sticky);
       eighthQ();
     });
     $('.8buttonSticky').click(function () {
       sticky += 1;
-      console.log("St: " + staple);
-      console.log("T: " + trash);
-      console.log("St: " + sticky);
       eighthQ();
     });
-
+    
+    let reset = document.getElementById("reset-button");
+    reset.addEventListener("click", function(e) {
+      location.reload();
+    });
+  
   });
 });

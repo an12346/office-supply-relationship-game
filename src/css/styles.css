@@ -24,87 +24,273 @@ font-family: 'Zen Antique', serif; */
 }
 
 body  { 
-    background-image: url("../img/red-curtains-crop.jpeg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: black;
-    color: rgb(216, 216, 34);
-    font-size: 3.5em;
-    font-family: 'Luckiest Guy', cursive;
-  }
+  background-image: url("../img/red-curtains-crop.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: black;
+  color: rgb(216, 216, 34);
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3.5em;
+}
 
-  h2 {
-    font-size: 1.2em;
-  }
+h2 {
+  font-size: 1.2em;
+}
 
-  .btn {
-    padding: 1em;
-    margin: .5em;
-    width: 30%;
-  }
+.container {
+  background-color: rgb(75, 75, 75, .5);
+  border-radius: 15px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  padding: 3%;
+}
 
-  .container {
-    background-color: rgb(75, 75, 75, .5);
-    border-radius: 15px;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    padding: 3%;
-  }
+#weird {
+  width: 300px;
+  height: auto;
+  transform: scaleX(-1);
+}
+
+#michael-first-question {
+  width: 250px;
+  height: auto;
+  border-radius: 0px 0px 0px 25px;
+}
+
+#reveal {
+  width: 100%;
+}
+
+.bubble {
+  position: relative;
+  font-family: sans-serif;
+  line-height: 24px;
+  width: 50%x;
+  background: rgb(251, 251, 248);
+  border-radius: 40px;
+  padding: 24px;
+  margin-left: 2%;
+  text-align: center;
+  color:rgb(205, 34, 199);
   
-  #weird {
-    width: 300px;
-    height: auto;
-    transform: scaleX(-1);
-  }
+}
 
-  #michael-first-question {
-    width: 250px;
-    height: auto;
-    border-radius: 0px 0px 0px 25px;
-  }
-
-  #reveal {
-    width: 32%;
-  }
-
-  .bubble {
-    position: relative;
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    width: 50%x;
-    background: rgb(255, 255, 255, .8);
-    border-radius: 40px;
-    padding: 24px;
-    margin-left: 2%;
-    text-align: center;
-    color: #000;
-  }
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 200px;
+  bottom: -24px;
   
-  .bubble-bottom-left:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 24px solid #fff;
-    border-right: 12px solid transparent;
-    border-top: 12px solid #fff;
-    border-bottom: 20px solid transparent;
-    left: 200px;
-    bottom: -24px;
-    
-  }
+}
 
-  .michael {
-    width: 100%;
-    border: 2px solid rgb(197, 0, 0);
-    border-radius: 25px;
-    padding-top: 2%;
-    padding-right: 2%;
-    margin-bottom: 2%;
-  }
+.michael {
+  width: 100%;
+  border: 2px solid rgb(197, 0, 0);
+  border-radius: 25px;
+  padding-top: 2%;
+  padding-right: 2%;
+  margin-bottom: 2%;
+}
 
-  .fade-in{
-   text-decoration: fadeIn ease 10s;
+.spacing{
+  width: 100%;
+  border-radius: 25px;
+  border: 10px solid #ffa600;
+  padding-top: 5%;
+  padding-bottom: 30%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.spacing1{
+  width: 30%;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+
+}
+
+:root {
+  --transform-value: -100%;
+  --animation-duration: 1s;
+  --animation-ease: ease-in;
+}
+
+@keyframes initialAnimation-horizontal {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(var(--transform-value));
+    }
+}
+
+[data-animation*='first'] div:first-child, [data-animation*='first'] div:last-child {
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+
+  top: 0;
+
+  border: .25em solid #a90329;
+  background: linear-gradient(to right, #a90329 0%,#a90329 6%,#6d0019 10%,#a90329 14%,#a90329 20%,#6d0019 24%,#a90329 28%,#a90329 34%,#6d0019 38%,#a90329 42%,#a90329 48%,#6d0019 52%,#a90329 56%,#a90329 62%,#6d0019 66%,#a90329 70%,#a90329 76%,#6d0019 80%,#a90329 84%,#a90329 90%,#6d0019 94%,#a90329 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  z-index: 123456;
+}
+
+[data-animation*='first'] div:first-child {
+    left: 0;
+
+    animation: var(--animation-duration) var(--animation-ease) var(--animation-duration) 1 forwards initialAnimation-horizontal;
+}
+[data-animation*='first'] div:last-child {
+    right: 0;
+
+    --transform-value: 100%;
+    animation: var(--animation-duration) var(--animation-ease) var(--animation-duration) 1 forwards initialAnimation-horizontal;
+}
+
+
+
+.shimmer {
+  margin: 0 auto;
+  padding: 0 140px 0 0;
+  display: inline;
+  margin-bottom: 0;
+}
+p {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1em;
+  color: rgba(255,255,255,0.65);
+  width: 500px;
+  text-align: justify;
+  line-height: 1.5em;
+  border-top: 1px dashed rgba(255,255,255,0.2);
+  margin: 10px 0 0 5px;
+  padding-top: 10px;
+}
+p a {
+  text-decoration: none;
+  color: #fff;
+}
+p a:visted {
+  color: #fff;
+}
+.shimmer {
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(216, 216, 34)), to(rgb(216, 216, 34)), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(rgb(216, 216, 34)), to(rgb(216, 216, 34)), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(rgb(216, 216, 34)), to(rgb(216, 216, 34)), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: rgb(216, 216, 34);
+}
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
   }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+/* BUTTON TEST */
+
+.btn {
+  position: relative;
+  border-radius: 40px;
+  padding: 24px;
+  margin-top: 8%;
+  width: 100%;
+  background-color: #fff;
+  
+}
+
+.btn-top-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: relative;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 16px solid transparent;
+  border-bottom: 20px solid #fff;
+  left: 100px;
+  bottom: 28px;
+  clip-path: polygon(100% 0, 100% 33%, 0% 33%, 0 0%);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.dasHb:hover .btn-top-left:before {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+#play {
+  background-color: rgb(216, 189, 34);
+  font-size: .8em;
+}
+
+#reset-button {
+  display: none;
+  background-color: rgb(216, 189, 34);
+}
+
+#color{
+  width: 200px;
+  height: 100px;
+  float: right;
+  padding-right: 200px;
+}
