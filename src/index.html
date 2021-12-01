@@ -2,52 +2,85 @@
 <html lang="en-us">
 
 <head>
-
-  <title>Office love</title>
+<title>Office love</title>
 </head>
 
 <body>
+  <audio class="themeMusic"
+  src="https://soundimage.org/wp-content/uploads/2020/07/Summertime-Fun.mp3" controls type="audio/mpeg">
+  </audio>
   <div class="container">
-
-    <div id="enterName">
-      <h2>Office Dating Quiz</h2>
-      <div class="bubble bubble-bottom-left" contenteditable>
-        <h3>Hello my name is Michael Scott. Welcome to the game of Office Love. Answer these dating questions to find your office match.</h3>
+    <form id="nameForm">
+      <div id="enterName">
+        <h2>Office Dating Quiz</h2>
+        <div class="michael">
+          <div class="bubble bubble-bottom-left" contenteditable>
+            <h3>Hello my name is Michael Scott. Welcome to the game of Office Love. Answer these dating questions to find your office match.</h3>
+          </div>
+          <img id="weird" src="./img/michael-face.png" alt="A photo of steve caroll making a funny face">
+        </div>
+        <h3 id="beginName">Enter your name to begin.</h3>
+        <input type="text" id="userName">
+        <button type="submit" id="play" class="btn btn-light">Enter Your Name To Find Love.</button>
       </div>
-      <img id="weird" src="./img/michael-face.png" alt="A photo of steve caroll making a funny face">
-      <h3>Enter your name to begin.</h3>
-      <input type="text" id="userName">
-      <button id="play" class="btn btn-light">Enter Your Name To Find Love.</button>
-    </div>
-
+    </form>
     <div id="questions">
       <div id="question1">
-        <h3>If you could have dinner with anyone, who would it be?</h3>
+        <div class="michael">
+          <div class="bubble bubble-bottom-left" contenteditable>
+            <h3>If you could have dinner with anyone, who would it be?</h3>
+          </div>
+          <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+        </div>
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
         <button type="button" class="1buttonStapler btn btn-light">Chris Stapleton</button>
         <button type="button" class="1buttonTrash btn btn-light">Oscar the Grouch</button>
         <button type="button" class="1buttonSticky btn btn-light">Sticky Minaj</button>
       </div>
 
       <div id="question2">
-        <h3>You're sitting in a coffeeshop. The table next to you spills their coffee. What do you do?</h3>
+        <div class="michael">
+          <div class="bubble bubble-bottom-left" contenteditable>
+            <h3>You're sitting in a coffeeshop. The table next to you spills their coffee. What do you do?</h3>
+          </div>
+          <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+        </div>
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
         <button type="button" class="2buttonStapler btn btn-light">Help throw away dirty supplies</button>
-        <button type="button" class="2buttonTrash btn btn-light">Put together a stack of napkins and wipe up the
-          mess</button>
+        <button type="button" class="2buttonTrash btn btn-light">Put together a stack of napkins and wipe up the mess</button>
         <button type="button" class="2buttonSticky btn btn-light">Write a memo about the dangers of hot coffee</button>
       </div>
 
       <div id="question3">
-        <h3>If you were were stuck on a deserted island and could only choose one thing to take with you, what would it
-          be?</h3>
-        <button type="button" class="3buttonStapler btn btn-light">A trash bag, you can use it to carry things, wear it
-          as clothes, use it as a sail, or make a shelter out of it!</button>
+        <div class="michael">
+          <div class="bubble bubble-bottom-left" contenteditable>
+            <h3>If you were were stuck on a deserted island and could only choose one thing to take with you, what would it
+              be?</h3>
+          </div>
+          <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+        </div>
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <button type="button" class="3buttonStapler btn btn-light">A trash bag, you can use it to carry things, wear it as clothes, use it as a sail, or make a shelter out of it!</button>
         <button type="button" class="3buttonTrash btn btn-light">Staples, to fasten myself a shelter?</button>
-        <button type="button" class="3buttonSticky btn btn-light">A pen, to write down all my thoughts and help keep my
-          mind organized.</button>
+        <button type="button" class="3buttonSticky btn btn-light">A pen, to write down all my thoughts and help keep my mind organized.</button>
       </div>
 
       <div id="question4">
-        <h3>If you were to take me out on a date, where would we go?</h3>
+        <div class="michael">
+          <div class="bubble bubble-bottom-left" contenteditable>
+            <h3>If you were to take me out on a date, where would we go?</h3>
+          </div>
+          <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+        </div>
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
         <button type="button" class="4buttonStapler  btn btn-light">The location doesn't matter, as long as I get to
           hold you</button>
         <button type="button" class="4buttonTrash  btn btn-light">Home Country Buffet</button>
@@ -56,30 +89,62 @@
       </div>
 
       <div id="question5">
-        <h3>Where would your dream wedding take place?</h3>
+        <div class="michael">
+          <div class="bubble bubble-bottom-left" contenteditable>
+            <h3>Where would your dream wedding take place?</h3>
+          </div>
+          <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+        </div>
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
         <button type="button" class="5buttonStapler  btn btn-light">Staples Center</button>
-        <button type="button" class="5buttonTrash  btn btn-light">Somewhere with the arouma of garbage, like a
-          landfill.</button>
-        <button type="button" class="5buttonSticky  btn btn-light">As long as everything is organized and color coated,
-          I don't care where the wedding takes place.</button>
+        <button type="button" class="5buttonTrash  btn btn-light">Somewhere with the arouma of garbage, like a landfill.</button>
+        <button type="button" class="5buttonSticky  btn btn-light">As long as everything is organized and color coated, I don't care where the wedding takes place.</button>
       </div>
 
       <div id="question6">
-        <h3>What is your favorite color?</h3>
+        <div class="michael">
+          <div class="fade-in">
+            <div class="bubble bubble-bottom-left" contenteditable>
+              <h3>What is your favorite color?</h3>
+            </div>
+          </div>
+          <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+        </div>
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
         <button type="button" class="6buttonStapler  btn btn-light">Red</button>
         <button type="button" class="6buttonTrash  btn btn-light">"Brown, it's all the colors mixed together!"</button>
         <button type="button" class="6buttonSticky  btn btn-light">Yellow</button>
       </div>
 
       <div id="question7">
-        <h3>What does your perfect day look like?</h3>
+        <div class="michael">
+          <div class="bubble bubble-bottom-left" contenteditable>
+            <h3>What does your perfect day look like?</h3>
+          </div>
+          <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+        </div>
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
         <button type="button" class="7buttonStapler  btn btn-light"> A day at the beach</button>
         <button type="button" class="7buttonTrash  btn btn-light">Trash Day</button>
         <button type="button" class="7buttonSticky  btn btn-light">A day of remembering important dates</button>
       </div>
 
       <div id="question8">
-        <h3>If you could only practice one hobby for the rest of your life, what would it be?</h3>
+        <div class="michael">
+          <div class="bubble bubble-bottom-left" contenteditable>
+            <h3>If you could only practice one hobby for the rest of your life, what would it be?</h3>
+          </div>
+          <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+        </div>
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
+        <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
         <button type="button" class="8buttonStapler  btn btn-light">Attaching objects to one another.</button>
         <button type="button" class="8buttonTrash  btn btn-light">Trading garbage pail kids cards.</button>
         <button type="button" class="8buttonSticky  btn btn-light">Organizing everyones life for them.</button>
@@ -88,16 +153,19 @@
     </div>
     <div class="result">
       <div id="trashImg">
-        <h4> <span text="#userName"></span> blah blah your match is </h4>
+        <h4> <span class="name "></span> your match is... </h4>
         <img id="trash" src="./img/trash-can-person.png" alt="A photo of a person entering a trash can">
+        <h4>Trash Can!</h4>
       </div>
       <div id="stickyImg">
-        <h4>blah blah blah your match is </h4>
+        <h4><span class="name "></span> your match is... </h4>
         <img id="sticky" src="./img/sticky-note-man.png" alt="A man covered in sticky notes">
+        <h4>Sticky Notes!</h4>
       </div>
       <div id="staplerImg">
-        <h4>blah blah blah your match is </h4>
+        <h4><span class="name "></span> your match is... </h4>
         <img id="stapler" src="./img/stapler.jpeg" alt="A photo of a stapler">
+        <h4>Stapler!</h4>
       </div>
     </div>
   </div>
