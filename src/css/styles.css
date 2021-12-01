@@ -44,6 +44,7 @@ h2 {
   margin-top: 2%;
   margin-bottom: 5%;
   padding: 3%;
+  border: 5px solid rgb(173, 11, 11)
 }
 
 #weird {
@@ -101,6 +102,7 @@ h2 {
 
 .spacing{
   width: 100%;
+  height: auto;
   border-radius: 25px;
   border: 10px solid #ffa600;
   padding-top: 5%;
@@ -109,6 +111,7 @@ h2 {
   margin-right: 0;
   padding-left: 20px;
   padding-right: 5px;
+ 
 }
 
 .spacing1{
@@ -116,8 +119,6 @@ h2 {
   float: left;
   padding-left: 30px;
   padding-right: 30px;
-  
-
 }
 
 :root {
@@ -252,12 +253,13 @@ p a:visted {
   border-radius: 40px;
   padding: 24px;
   margin-top: 8%;
+  margin-bottom: 10%;
   width: 100%;
   background-color: #fff;
-  
+  text-align: center;
 }
 
-.btn-top-left:before {
+.btn-top-left:before{
   content: "";
   width: 0px;
   height: 0px;
@@ -266,17 +268,16 @@ p a:visted {
   border-right: 12px solid transparent;
   border-top: 16px solid transparent;
   border-bottom: 20px solid #fff;
-  left: 100px;
+  left: 75px;
   bottom: 28px;
   clip-path: polygon(100% 0, 100% 33%, 0% 33%, 0 0%);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.dasHb:hover .btn-top-left:before {
+/* .btn-top-left:hover {
   color: #212529;
   background-color: #e2e6ea;
   border-color: #dae0e5;
-}
+} */
 
 #play {
   background-color: rgb(216, 189, 34);
@@ -289,8 +290,53 @@ p a:visted {
 }
 
 #color{
-  width: 200px;
-  height: 100px;
-  float: right;
-  padding-right: 200px;
+  border: 10px solid red;
+  margin: auto;
+  height: 200px;
+  object-fit: scale-down;
+  margin-left: 200px;
+}
+
+#dinner{
+border: 10px solid red;
+margin: auto;
+height: 300px;
+
+}
+
+#spill{
+border: 10px solid red;
+margin: auto;
+object-fit: contain;
+}
+
+#island{
+  border: 10px solid red;
+  margin: auto;
+}
+
+#date{
+  border: 10px solid red;
+  margin: auto;
+}
+
+#wedding{
+  border: 10px solid red;
+  margin: auto;
+}
+
+#day{
+  border: 10px solid red;
+  margin: auto;
+}
+
+#hobbies{
+  border: 10px solid red;
+  margin: auto;
+
+}
+
+#micheal-first-question{
+  padding-bottom: 0px;
+  margin-bottom: auto;
 }

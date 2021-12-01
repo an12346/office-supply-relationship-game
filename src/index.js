@@ -11,7 +11,6 @@ $(document).ready(function () {
     let sticky = 0;
     let trash = 0;
     let userName = $('#userName').val();
-    
  
     $('#enterName').hide();
     $('#question1').show();
@@ -24,14 +23,11 @@ $(document).ready(function () {
       }
       
       if (trash > sticky && trash > staple) {
-        $('#trashImg').fadeIn();
-        $('#answer').fadeIn();
+        $('#trashImg').show();
       } else if (sticky > trash && sticky > staple) {
-        $('#stickyImg').fadeIn();
-        $('#answer').fadeIn();
+        $('#stickyImg').show();
       } else if (staple > trash && staple > sticky) {
-        $('#staplerImg').fadeIn();
-        $('#answer').fadeIn();
+        $('#staplerImg').show();
       }
     }
 
@@ -178,6 +174,9 @@ $(document).ready(function () {
     
     $('.8buttonStapler').click(function () {
       staple += 1;
+      console.log("St: " + staple);
+      console.log("T: " + trash);
+      console.log("St: " + sticky);
       eighthQ();
     });
     $('.8buttonTrash').click(function () {

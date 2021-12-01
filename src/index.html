@@ -15,12 +15,12 @@
         <h2 class="shimmer">Office Love</h2>
         <div class="michael">
           <div class="bubble bubble-bottom-left" contenteditable>
-            <h3>Hello my name is Michael Scott. Welcome to the game of Office Love. This is the Game show where you pick the inanimate object you get to spend the rest of your life with! Choose the answer provided by one of our fabulous bachelorette/bachelors that best suites your interests. In the end the result will be tallied and the mystery will be revealed.</h3>
+            <h3>"Hello my name is Michael Scott. Welcome to the game of Office Love. This is the Game show where you pick the inanimate object you get to spend the rest of your life with! Choose the answer provided by one of our fabulous bachelorette/bachelors that best suites your interests. In the end the result will be tallied and the mystery will be revealed"</h3>
           </div>
           <img id="weird" src="./img/michael-face.png" alt="A photo of steve caroll making a funny face">
         </div>
         <h3 id="beginName">Enter your name to begin.</h3>
-        <input type="text" id="userName">
+        <input type="text" id="userName" placeholder="Contestant" required oninvalid="this.setCustomValidity('Please enter your name to find love!!!')" oninput="this.setCustomValidity('')" />
         <button type="submit" id="play" class="btn btn-warning">Enter Your Name To Find Love.</button>
       </div>
     </form>
@@ -28,7 +28,7 @@
       <div id="question1">
         <div class="michael">
           <div class="bubble bubble-bottom-left" contenteditable>
-            <h3>If you could have dinner with anyone, who would it be?</h3>
+            <h3>"If you could have dinner with anyone, who would it be?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
           <img id="dinner" src="./img/dog-spaghetti.gif" alt="A photo of a dog eatting spaggetti">
@@ -53,7 +53,7 @@
       <div id="question2">
         <div class="michael">
           <div class="bubble bubble-bottom-left" contenteditable>
-            <h3>You're sitting in a coffeeshop. The table next to you spills their coffee. What do you do?</h3>
+            <h3>"You're sitting in a coffeeshop. The table next to you spills their coffee. What do you do?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
           <img id="spill" src="./img/spill.gif" alt="A photo of chile being spilled">
@@ -77,8 +77,8 @@
       <div id="question3">
         <div class="michael">
           <div class="bubble bubble-bottom-left" contenteditable>
-            <h3>If you were were stuck on a deserted island and could only choose one thing to take with you, what would it
-              be?</h3>
+            <h3>"If you were were stuck on a deserted island and could only choose one thing to take with you, what would it
+              be?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
           <img id="island" src="img/islandstuck.gif" alt="Fire SOS signal">
@@ -102,7 +102,7 @@
       <div id="question4">
         <div class="michael">
           <div class="bubble bubble-bottom-left" contenteditable>
-            <h3>If you were to take me out on a date, where would we go?</h3>
+            <h3>"If you were to take me out on a date, where would we go?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
           <img id="date" src="img/awkward-date.gif" alt="Steve carroll asking someone out on a date">
@@ -110,17 +110,17 @@
         <div class="spacing">
           <div class="spacing1">
             <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-            <button type="button" class="4buttonStapler btn btn-light btn-top-left">The location doesn't matter, as long as I get to
-            hold you</button>
+            <button type="button" class="4buttonStapler btn btn-light btn-top-left">"The location doesn't matter, as long as I get to
+            hold you"</button>
           </div>
           <div class="spacing1">
             <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-            <button type="button" class="4buttonTrash  btn btn-light btn-top-left">Home Country Buffet</button>
+            <button type="button" class="4buttonTrash  btn btn-light btn-top-left">"Home Country Buffet"</button>
           </div>
           <div class="spacing1">
             <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-            <button type="button" class="4buttonSticky btn btn-light btn-top-left">We'd go on a tour of a Glue factory or a paper
-            mill</button>
+            <button type="button" class="4buttonSticky btn btn-light btn-top-left">"We'd go on a tour of a Glue factory or a paper
+            mill"</button>
           </div>
         </div>
       </div>
@@ -128,22 +128,23 @@
       <div id="question5">
         <div class="michael">
           <div class="bubble bubble-bottom-left" contenteditable>
-            <h3>Where would your dream wedding take place?</h3>
+            <h3>"Where would your dream wedding take place?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img id="wedding" src="img/wedding.gif" alt="a gif of a wedding cake">
         </div>
           <div class ="spacing">
             <div class="spacing1">
               <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-              <button type="button" class="5buttonStapler btn btn-light btn-top-left">Staples Center</button>
+              <button type="button" class="5buttonStapler btn btn-light btn-top-left">"Staples Center"</button>
             </div>
             <div class="spacing1">
               <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-              <button type="button" class="5buttonTrash btn btn-light btn-top-left">Somewhere with the arouma of garbage, like a landfill.</button>
+              <button type="button" class="5buttonTrash btn btn-light btn-top-left">"Somewhere with the arouma of garbage, like a landfill"</button>
             </div>
             <div class="spacing1">
               <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-              <button type="button" class="5buttonSticky btn btn-light btn-top-left">As long as everything is organized and color coated, I don't care where the wedding takes place.</button>
+              <button type="button" class="5buttonSticky btn btn-light btn-top-left">"As long as everything is organized and color coated, I don't care where the wedding takes place"</button>
             </div>
           </div>
         </div>
@@ -152,7 +153,7 @@
       <div id="question6">
         <div class="michael">
           <div class="bubble bubble-bottom-left" contenteditable>
-            <h3>What is your favorite color?</h3>
+            <h3>"What is your favorite color?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
           <img id="color" src="./img/rainbow-swirls-relaxing.gif" alt="A rainbow swril effect">
@@ -160,7 +161,7 @@
           <div class="spacing">
             <div class="spacing1">
               <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-              <button type="button" class="6buttonStapler btn btn-light btn-top-left">Red</button>
+              <button type="button" class="6buttonStapler btn btn-light btn-top-left">"Red"</button>
             </div>
             <div class="spacing1">
               <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
@@ -168,7 +169,7 @@
             </div>
             <div class="spacing1">
               <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-              <button type="button" class="6buttonSticky  btn btn-light btn-top-left">Yellow</button>
+              <button type="button" class="6buttonSticky  btn btn-light btn-top-left">"Yellow"</button>
             </div>
           </div>
       </div>
@@ -176,22 +177,23 @@
       <div id="question7">
         <div class="michael">
           <div class="bubble bubble-bottom-left" contenteditable>
-            <h3>What does your perfect day look like?</h3>
+            <h3>"What does your perfect day look like?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img id="day" src="img/goodday.gif" alt="A gif of a bear telling you to have a good day">
         </div>
         <div class ="spacing">
           <div class="spacing1">
             <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-            <button type="button" class="7buttonStapler btn btn-light btn-top-left"> A day at the beach</button>
+            <button type="button" class="7buttonStapler btn btn-light btn-top-left">"A day at the beach"</button>
           </div>
           <div class="spacing1">
             <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-            <button type="button" class="7buttonTrash btn btn-light btn-top-left">Trash Day</button>
+            <button type="button" class="7buttonTrash btn btn-light btn-top-left">"Trash day"</button>
           </div>
           <div class="spacing1">
             <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-            <button type="button" class="7buttonSticky btn btn-light btn-top-left">A day of remembering important dates</button>
+            <button type="button" class="7buttonSticky btn btn-light btn-top-left">"A day of remembering important dates"</button>
           </div>
         </div>
       </div>
@@ -199,22 +201,23 @@
       <div id="question8">
         <div class="michael">
           <div class="bubble bubble-bottom-left" contenteditable>
-            <h3>If you could only practice one hobby for the rest of your life, what would it be?</h3>
+            <h3>"If you could only practice one hobby for the rest of your life, what would it be?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img id="hobbies" src="img/hobbies-who-has-hobbies.gif" alt="A gif of someone saying who has hobbies">
         </div>
         <div class="spacing">
           <div class= "spacing1">
             <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-            <button type="button" class="8buttonStapler btn btn-light btn-top-left">Attaching objects to one another.</button>
+            <button type="button" class="8buttonStapler btn btn-light btn-top-left">"Attaching objects to one another"</button>
           </div>
           <div class="spacing1">
             <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-            <button type="button" class="8buttonTrash btn btn-light btn-top-left">Trading garbage pail kids cards.</button>
+            <button type="button" class="8buttonTrash btn btn-light btn-top-left">"Trading garbage pail kids cards"</button>
           </div>
           <div class="spacing1">
             <img id="reveal" src="./img/reveal-curtain.jpeg" alt="A single red curtain">
-            <button type="button" class="8buttonSticky btn btn-light btn-top-left">Organizing everyones life for them.</button>
+            <button type="button" class="8buttonSticky btn btn-light btn-top-left">"Organizing everyones life for them"</button>
           </div>
         </div>
       </div>
@@ -222,7 +225,7 @@
     </div>
     <div class="result">
       <div id="trashImg">
-        <h2> <span class="name "></span> Your love match is... </h2>
+        <h2> <span class="name "></span>, Your love match is... </h2>
         <h2 id="answer">Trash Can!</h2>
         <img id="trash" src="./img/trash-can-person.png" alt="A photo of a person entering a trash can">
         <img id="heart" src="./img/heartgif.gif" alt="A gif of hearts">
@@ -232,7 +235,7 @@
         </div>
       </div>
       <div id="stickyImg">
-        <h2><span class="name "></span> Your love match is... </h2>
+        <h2><span class="name "></span>, Your love match is... </h2>
         <h2 id="answer">Sticky Notes!</h2>
         <img id="sticky" src="./img/sticky-note-man.png" alt="A man covered in sticky notes">
         <img id="heart" src="./img/heartgif.gif" alt="A gif of hearts">
@@ -242,11 +245,10 @@
         </div>
       </div>
       <div id="staplerImg">
-        <h2><span class="name "></span> Your love match is... </h2>
+        <h2><span class="name "></span>, Your love match is... </h2>
         <h2 id="answer">Stapler!</h2>
         <img id="stapler" src="./img/stapler.jpeg" alt="A photo of a stapler">
         <img id="heart" src="./img/heartgif.gif" alt="A gif of hearts">
-        
         <div data-animation='first'>
           <div></div>
           <div></div>
@@ -258,117 +260,3 @@
 </body>
 
 </html>
-
-
-<!--
-
-  This game will find your office supply soulmate. User will be asked a series of questions and your answers will decide 
-  show you who your office supply soulmate is.
-  
-  questions
-    * You're sitting in a coffeeshop. The table next to you spills their coffee. What do you do?
-       a. Help throw away dirty supplies - trash can 
-        b. Put together a stack of napkins and wipe up the mess - staples 
-        c. Write a memo about the dangers of hot coffee - sticky notes 
-
-    * Older Brother: "Mom says we have one more chore to do before we can play video games. Which chore are YOU going to do?"
-        a. Clean up the papers on the study desk - staples
-        b. Windex the windows - sticky notes
-        c. Take out the trash - trash can
-    
-    * If you were to take me out on a date, where would we go?
-      a. The location doesn't matter, as long as I get to hold you - Stapler
-      b. Home Country Buffet - Trash Can
-      c. We'd go on a tour of a Glue factory or a paper mill - Sticky Notes
-
-    * If you were were stuck on a deserted island and could only choose one thing to take with you, what would it be?
-      - A trash bag, you can use it to carry things, wear it as clothes, use it as a sail, or make a shelter out of it!
-      - Staples, to fasten myself a shelter?
-      - A pen, to write down all my thoughts and help keep my mind organized. - Sticky Notes
-
-    * What is your favorite color?
-      a. "Red" - stapler
-      b. "Yellow" - Sticky notes
-      c. "Brown, it's all the colors mixed together!" - Trash Can
-
-    * If you could travel to any year in a time machine, what year would you choose and why?
-      a. "1999, because that was the year my favorite movie came out." - Stapler
-      b. "1883, because I love history" - Trash Can
-      c. "1968, because it's groovy, baby!" - Sticky note
-    
-    * What does your perfect day look like?
-      a. stapler: A day at the beach
-      b. trash can: Trash day
-      c. sticky Notes: A day of remembering important dates
-
-    * If you could have any super power, what would it be?
-      a. stapler: unlimited staples
-      b. trash can: 
-      c. sticky Notes:
-      
-    * If you could have dinner with anyone, who would it be?
-      a. stapler: Chris Stapleton
-      b. trash can: Oscar the Grouch
-      c. sticky Notes: Sticky Minaj
-
-    * Where would you dream wedding take place?
-     T- Somewhere with the arouma of garbage, like a landfill.
-     S- Staples Center
-     SN- As long as everything is organized and color coated, I don't care where the wedding takes place.
-
-    *Dog or Cat person? Why?
-    T- I'd have to say I prefer cats since they dispose of waste in a litterbox.
-    S- I like to bite things like dogs, so i'll go with dogs.
-    SN- Cats because they are not color blind, color cordination is extremely imporrtant to me.
-    
-    *Worst red flags on a first date?
-    T- When they don't smell like garabage and or have nothing to do with dispoable waste.
-    S- Its a deal breaker if they don't like being physically attached to me with a small metal clip at all times.
-    SN- If they dont have OCD get away from me.
-
-    *Favorite song to slow dance to?
-    T- clean up song - 
-    S- i'll take you there - The staple singers
-    SN- colors of the rainbow.
-
-    *If you could only practice one hobby for the rest of your life, what would it be?
-    T- trading garbage pail kids cards.
-    S- attaching object to one another.
-    SN- planning everyones life for them.
-
-
-  answers
-    TRASH CAN
-      - clean, dirty,  
-      - chores, 
-      -
-
-    STICKY NOTES
-      - Sticky
-      - Remember
-      - glue
-    
-    STAPLER
-      - keep together, hold, fastener, puncture, clip
-      - staple, necessary, basic, standard, important
-      - metal, office space
-
-
-  Press Find love
-  New page with host to explain the game rules. press start? press next?
-
-  each question has 3 multiple choice answers? each with a value for 1,2,3 office supply
-
-  example question1: 
-
-  What's your favorite hobby:
-
-  throwing things out: value 1 - trash can
-  sitting: value 2 - chair
-  stapling: value 3 - stapler
-
-  choose answer, press next, question disappears, next question appears
-
-  final score tallied in business logic, office supply displayed
-
--->
