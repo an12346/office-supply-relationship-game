@@ -296,7 +296,7 @@ h2 {
 }
 
 #dinner{
-outline: 10px solid red;
+border: 10px solid red;
 margin: auto;
 height: 200px;
 margin-left: 125px;
