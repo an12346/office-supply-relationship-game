@@ -22,7 +22,7 @@ _This Dating simulator mock game, was created for our first team week project at
 
 ## Setup/Installation Requirements
 
-* _Clone the GitHub [repository]() or download and open the Zip on your local machine.
+* _Clone the GitHub [repository]() or you can download and open the Zip on your local hardware.
 * _From the project directory, run `npm install` in the terminal to load necessary plugins and packages._
 * _Run `npm run start` to start the application._
 * run `npm run build` and open dist/index.html in your preferred browser._
@@ -39,5 +39,5 @@ Copyright (c) _2021_ _Colton Thatcher,Anna Pittman,Liz Thomas,Albert Lee_
 ## Support and Contact Details
 * _[colt.thatcher303@gmail.com](colt.thatcher303@gmail.com)
 * _[leesga8@gmail.com](leesga8@gmail.com)
-* [annaepittman@gmail.com](annaepittman@gmail.com) 
+* _[annaepittman@gmail.com](annaepittman@gmail.com)_ 
 * _[thomas.elizabeth.k@gmail.com](thomas.elizabeth.k@gmail.com)_

@@ -14,10 +14,11 @@
       <div id="enterName">
         <h2 class="shimmer">Office Love</h2>
         <div class="michael">
-          <div class="bubble bubble-bottom-left" contenteditable>
+          <div class="bubble bubble-bottom-left" style="display: block;">
             <h3>"Hello my name is Michael Scott. Welcome to the game of Office Love. This is the Game show where you pick the inanimate object you get to spend the rest of your life with! Choose the answer provided by one of our fabulous bachelorette/bachelors that best suites your interests. In the end the result will be tallied and the mystery will be revealed"</h3>
           </div>
           <img id="weird" src="./img/michael-face.png" alt="A photo of steve caroll making a funny face">
+          <img id="microphone" src="./img/microphone-stand-removebg-preview.png" alt="a picture of a microphone">
         </div>
         <h3 id="beginName">Enter your name to begin.</h3>
         <input type="text" id="userName" placeholder="Contestant" required oninvalid="this.setCustomValidity('Please enter your name to find love!!!')" oninput="this.setCustomValidity('')" />
@@ -31,8 +32,9 @@
             <h3>"If you could have dinner with anyone, who would it be?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img class="microphone-q" src="./img/microphone-stand-removebg-preview.png" alt="a picture of a microphone">
           <img id="dinner" src="./img/dog-spaghetti.gif" alt="A photo of a dog eatting spaggetti">
-         </div>
+        </div>
          
         <div class ="spacing">
           <div class="spacing1">
@@ -56,6 +58,7 @@
             <h3>"You're sitting in a coffeeshop. The table next to you spills their coffee. What do you do?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img class="microphone-q" src="./img/microphone-stand-removebg-preview.png" alt="a picture of a microphone">
           <img id="spill" src="./img/spill.gif" alt="A photo of chile being spilled">
         </div>
         <div class="spacing">
@@ -81,6 +84,7 @@
               be?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img class="microphone-q" src="./img/microphone-stand-removebg-preview.png" alt="a picture of a microphone">
           <img id="island" src="img/islandstuck.gif" alt="Fire SOS signal">
         </div>
         <div class="spacing">
@@ -105,6 +109,7 @@
             <h3>"If you were to take me out on a date, where would we go?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img class="microphone-q" src="./img/microphone-stand-removebg-preview.png" alt="a picture of a microphone">
           <img id="date" src="img/awkward-date.gif" alt="Steve carroll asking someone out on a date">
         </div>
         <div class="spacing">
@@ -131,6 +136,7 @@
             <h3>"Where would your dream wedding take place?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img class="microphone-q" src="./img/microphone-stand-removebg-preview.png" alt="a picture of a microphone">
           <img id="wedding" src="img/wedding.gif" alt="a gif of a wedding cake">
         </div>
           <div class ="spacing">
@@ -156,6 +162,7 @@
             <h3>"What is your favorite color?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img class="microphone-q" src="./img/microphone-stand-removebg-preview.png" alt="a picture of a microphone">
           <img id="color" src="./img/rainbow-swirls-relaxing.gif" alt="A rainbow swril effect">
         </div>
           <div class="spacing">
@@ -180,6 +187,7 @@
             <h3>"What does your perfect day look like?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img class="microphone-q" src="./img/microphone-stand-removebg-preview.png" alt="a picture of a microphone">
           <img id="day" src="img/goodday.gif" alt="A gif of a bear telling you to have a good day">
         </div>
         <div class ="spacing">
@@ -204,6 +212,7 @@
             <h3>"If you could only practice one hobby for the rest of your life, what would it be?"</h3>
           </div>
           <img id="michael-first-question" src="img/michael-bandana.png" alt="a photo of Michael Scott in a bandana">
+          <img class="microphone-q" src="./img/microphone-stand-removebg-preview.png" alt="a picture of a microphone">
           <img id="hobbies" src="img/hobbies-who-has-hobbies.gif" alt="A gif of someone saying who has hobbies">
         </div>
         <div class="spacing">
@@ -256,6 +265,12 @@
       </div>
       <button type="reset" id="reset-button">Try Again</button>
     </div>
+  </div>
+  <div class="credit">
+    Project by:
+    <p class="credit">Albert Lee, Anna Pittman, Colt Thatcher, & Liz Thomas</p>
+    Created: December 2021 for Epicodus
+    <p>Music by <a href="https://soundimage.org/">Eric Matyas</a></p>
   </div>
 </body>
 
