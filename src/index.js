@@ -174,9 +174,6 @@ $(document).ready(function () {
     
     $('.8buttonStapler').click(function () {
       staple += 1;
-      console.log("St: " + staple);
-      console.log("T: " + trash);
-      console.log("St: " + sticky);
       eighthQ();
     });
     $('.8buttonTrash').click(function () {
